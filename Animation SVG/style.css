@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+
+
+
+#Clock_arrow{
+    animation: clock 8s linear infinite;
+    transform-origin:bottom;
+    transform-box: fill-box;
+}
+#Man{
+    animation: man 1s linear infinite alternate;
+}
+#Apple_logo{
+    animation: apple_logo 3s linear infinite;
+    transform-origin:center;
+    transform-box: fill-box;
+}
+@keyframes clock{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes man{
+    from{   
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(10deg);
+    }
+}
+
+@keyframes apple_logo{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(-360deg);
+    }
+}
